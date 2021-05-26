@@ -1,0 +1,42 @@
+@import '../../styles/common.scss';
+
+.container {
+  background-color: #434343;
+  height          : 100vh;
+  width           : 100vw;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+
+  .playerContainer {
+    height          : 90vH;
+    width           : 40vw;
+    display         : flex;
+    flex-direction  : column;
+    background-color: #14213d;
+    border-radius   : 25px;
+    row-gap         : 20px;
+    padding         : 20px 20px 0.5px 20px;
+    box-sizing      : border-box;
+
+    header {
+      display        : flex;
+      justify-content: space-between;
+      padding        : 20px 0px;
+      align-items    : center;
+      font-size      : 50px;
+      color          : white;
+      font-family    : 'Lobster', cursive;
+
+      svg {
+        width : 40px;
+        height: 40px;
+        fill  : white;
+      }
+
+      button {
+        @include inviButton;
+      }
+    }
+  }
+}
