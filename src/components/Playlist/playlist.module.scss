@@ -1,0 +1,55 @@
+@import '../../styles/common.scss';
+
+section {
+    display        : flex;
+    row-gap        : 20px;
+    flex-wrap      : wrap;
+    column-gap     : 30px;
+    justify-content: flex-start;
+    overflow       : auto;
+    height         : 100%;
+    scrollbar-width: none;
+    box-sizing     : border-box;
+    padding-bottom : 20px;
+
+    .container {
+        display         : flex;
+        flex-direction  : column;
+        padding         : 10px 15px;
+        width           : 30.5%;
+        height          : 17%;
+        color           : white;
+        background-color: #e5e5e5;
+        border-radius   : 10px;
+        box-sizing      : border-box;
+        row-gap         : 10px;
+
+        .songName {
+            flex          : 1;
+            font-size     : 14px;
+            font-weight   : bold;
+            letter-spacing: -0.1px;
+            line-height   : 15px;
+            color         : #313131;
+            font-family   : 'Archivo', sans-serif;
+        }
+
+        .buttonContainer {
+            flex           : 1;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            button {
+                @include inviButton;
+
+                svg {
+                    width : 35px;
+                    height: 35px;
+                }
+
+            }
+
+        }
+    }
+}

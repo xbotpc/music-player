@@ -1,0 +1,17 @@
+.container {
+    background-color: #90be6d;
+    border-radius   : 50%;
+    width           : 20px;
+    height          : 20px;
+    display         : flex;
+    align-items     : center;
+    justify-content : flex-end;
+    padding         : 5px 5px 5px 5px;
+
+    .triangle {
+        border           : 7px solid transparent;
+        border-left-color: #e7e7e7;
+        width            : 0;
+        height           : 0;
+    }
+}
