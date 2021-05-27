@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/music-player/static/css/main.f31d1e62.chunk.css",
+    "main.css": "/music-player/static/css/main.e9e8b562.chunk.css",
     "main.js": "/music-player/static/js/main.36155872.chunk.js",
     "main.js.map": "/music-player/static/js/main.36155872.chunk.js.map",
     "runtime-main.js": "/music-player/static/js/runtime-main.92aa4251.js",
@@ -10,7 +10,7 @@
     "static/js/3.b16032b1.chunk.js": "/music-player/static/js/3.b16032b1.chunk.js",
     "static/js/3.b16032b1.chunk.js.map": "/music-player/static/js/3.b16032b1.chunk.js.map",
     "index.html": "/music-player/index.html",
-    "static/css/main.f31d1e62.chunk.css.map": "/music-player/static/css/main.f31d1e62.chunk.css.map",
+    "static/css/main.e9e8b562.chunk.css.map": "/music-player/static/css/main.e9e8b562.chunk.css.map",
     "static/js/2.c9797da1.chunk.js.LICENSE.txt": "/music-player/static/js/2.c9797da1.chunk.js.LICENSE.txt",
     "static/media/audioNote.005ba490.svg": "/music-player/static/media/audioNote.005ba490.svg",
     "static/media/delete_outline_black.acaa8900.svg": "/music-player/static/media/delete_outline_black.acaa8900.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.92aa4251.js",
     "static/js/2.c9797da1.chunk.js",
-    "static/css/main.f31d1e62.chunk.css",
+    "static/css/main.e9e8b562.chunk.css",
     "static/js/main.36155872.chunk.js"
   ]
 }
