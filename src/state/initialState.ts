@@ -3,7 +3,11 @@ import { InitialPlaylistState } from "../types/InitialPlaylistState";
 
 export const playbackState: InitialPlaybackState = {
     playing: false,
-    currentAudio: '',
+    currentAudio: {
+        id: '',
+        audio: '',
+        name: ''
+    },
 }
 
 export const playlistState: InitialPlaylistState = {

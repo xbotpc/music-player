@@ -13,7 +13,7 @@ const audioReducer = (state = playbackState, { type = '', payload }: Action): In
             return {
                 ...state,
                 currentAudio: payload,
-                playing: !state.playing || state.currentAudio !== payload
+                playing: !state.playing || state.currentAudio.audio !== payload.audio
             }
 
         default:
