@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 import { ReactComponent as SettingsGearIcon } from '../../images/settingsGear.svg';
 import store from '../../state/store';
 import AddSong from '../AddSong/AddSong';
+import AudioControls from '../AudioControls/AudioControls';
 import AudioPlayer from '../AudioPlayer/AudioPlayer';
 import Playlist from '../Playlist/Playlist';
 import styles from './App.module.scss';
@@ -17,6 +18,7 @@ function App() {
             <AddSong />
           </header>
           <Playlist />
+          <AudioControls />
         </div>
         <AudioPlayer />
       </div>

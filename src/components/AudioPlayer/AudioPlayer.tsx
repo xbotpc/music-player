@@ -25,7 +25,7 @@ const AudioPlayer = () => {
 
     return (
         <Modal id={'hiddenModal'}>
-            <audio ref={audioRef} src={currentAudio} >
+            <audio ref={audioRef} src={currentAudio.audio} >
                 Your browser does not support audio playback. Fix your shit.
             </audio>
         </Modal>
