@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/music-player/static/css/main.f31d1e62.chunk.css",
+    "main.js": "/music-player/static/js/main.36155872.chunk.js",
+    "main.js.map": "/music-player/static/js/main.36155872.chunk.js.map",
+    "runtime-main.js": "/music-player/static/js/runtime-main.92aa4251.js",
+    "runtime-main.js.map": "/music-player/static/js/runtime-main.92aa4251.js.map",
+    "static/js/2.c9797da1.chunk.js": "/music-player/static/js/2.c9797da1.chunk.js",
+    "static/js/2.c9797da1.chunk.js.map": "/music-player/static/js/2.c9797da1.chunk.js.map",
+    "static/js/3.b16032b1.chunk.js": "/music-player/static/js/3.b16032b1.chunk.js",
+    "static/js/3.b16032b1.chunk.js.map": "/music-player/static/js/3.b16032b1.chunk.js.map",
+    "index.html": "/music-player/index.html",
+    "static/css/main.f31d1e62.chunk.css.map": "/music-player/static/css/main.f31d1e62.chunk.css.map",
+    "static/js/2.c9797da1.chunk.js.LICENSE.txt": "/music-player/static/js/2.c9797da1.chunk.js.LICENSE.txt",
+    "static/media/audioNote.005ba490.svg": "/music-player/static/media/audioNote.005ba490.svg",
+    "static/media/delete_outline_black.acaa8900.svg": "/music-player/static/media/delete_outline_black.acaa8900.svg",
+    "static/media/pause_black.b52642a6.svg": "/music-player/static/media/pause_black.b52642a6.svg",
+    "static/media/pause_circle_outline_black.c3e58036.svg": "/music-player/static/media/pause_circle_outline_black.c3e58036.svg",
+    "static/media/play_arrow_black.222a0afb.svg": "/music-player/static/media/play_arrow_black.222a0afb.svg",
+    "static/media/play_circle_outline_black.7279bad4.svg": "/music-player/static/media/play_circle_outline_black.7279bad4.svg",
+    "static/media/plus.cf56b2a6.svg": "/music-player/static/media/plus.cf56b2a6.svg",
+    "static/media/settingsGear.a10fd1de.svg": "/music-player/static/media/settingsGear.a10fd1de.svg",
+    "static/media/skip_next_black.ee07c6e9.svg": "/music-player/static/media/skip_next_black.ee07c6e9.svg",
+    "static/media/skip_previous_black.ad502168.svg": "/music-player/static/media/skip_previous_black.ad502168.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92aa4251.js",
+    "static/js/2.c9797da1.chunk.js",
+    "static/css/main.f31d1e62.chunk.css",
+    "static/js/main.36155872.chunk.js"
+  ]
+}
