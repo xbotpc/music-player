@@ -9,23 +9,62 @@
   align-items     : center;
 
   .playerContainer {
-    height          : 90vH;
-    width           : 40vw;
     display         : flex;
     flex-direction  : column;
     background-color: #14213d;
-    border-radius   : 25px;
     row-gap         : 20px;
     padding         : 20px 20px 11px 20px;
+
+    @media screen and (min-width: 320px) {
+      height       : 100%;
+      width        : 100%;
+      border-radius: 0;
+    }
+
+    @media screen and (min-width:1024px) {
+      height       : 90%;
+      width        : 50%;
+      border-radius: 25px;
+    }
+
+    @media screen and (min-width:1024px) and (min-height:1366px){
+      height       : 100%;
+      width        : 100%;
+      border-radius: 0;
+    }
+
+    @media screen and (min-width:1440px) {
+      height       : 90%;
+      width        : 40%;
+      border-radius: 25px;
+    }
 
     header {
       display        : flex;
       justify-content: space-between;
-      padding        : 20px 0px;
       align-items    : center;
       font-size      : 50px;
       color          : white;
       font-family    : 'Lobster', cursive;
+
+      @media screen and (min-width: 320px) {
+        font-size: 2em;
+        padding  : 0;
+      }
+
+      @media screen and (min-width: 800px) and (min-width: 850px) {
+        padding: 20px 0;
+      }
+
+      @media screen and (min-width:1024px) {
+        font-size: 3.125em;
+        padding  : 0;
+      }
+
+      @media screen and (min-width:1440px) {
+        font-size: 3.125em;
+        padding  : 20px 0;
+      }
 
       svg {
         width : 40px;
