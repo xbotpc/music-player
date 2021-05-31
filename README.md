@@ -1,3 +1,1 @@
-# XBOTPC's MUSIC PLAYER
-
-## Music player app.
+# [XBOTPC's MUSIC PLAYER](https://xbotpc.github.io/music-player/)

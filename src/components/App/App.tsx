@@ -22,7 +22,7 @@ function App() {
             Music Player
             <AddSong />
           </header>
-          {playlist.length !== 0 ? <Playlist /> : <span>Add Songs</span>}
+          {playlist.length !== 0 ? <Playlist /> : <span>No Songs Found!</span>}
           <AudioControls />
         </div>
         <AudioPlayer />
