@@ -27,7 +27,7 @@ const Playlist = () => {
         });
         dispatch({
             type: ACTIONS.PLAY_PAUSE,
-            payload: { id: '', audio: '', name: ''}
+            payload: { id: '', audio: '', name: '' }
         })
     }
 
@@ -51,8 +51,11 @@ const Playlist = () => {
 
     return (
         <>
-            <section>
-                {renderSongs(playlist)}
+            <section className={playlist.length !== 0 ? '' : styles.empty}>
+                {playlist.length !== 0
+                    ? renderSongs(playlist)
+                    : <span>No Songs Found!</span>
+                }
             </section>
         </>
     )

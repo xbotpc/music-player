@@ -87,21 +87,5 @@
         }
       }
     }
-
-    span {
-      text-align     : center;
-      display        : grid;
-      align-content  : center;
-      justify-content: center;
-      height         : 60%;
-      font-size      : 5em;
-      color          : white;
-
-      &::after {
-        display  : block;
-        content  : 'Add few songs';
-        font-size: 0.5em;
-      }
-    }
   }
 }

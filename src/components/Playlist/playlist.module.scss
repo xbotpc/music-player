@@ -11,6 +11,12 @@ section {
     overflow-y        : scroll;
     scrollbar-width   : none;
 
+    &.empty{
+        height: 61%;
+        grid-template-columns: 1fr;
+        align-content: center ;
+    }
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -29,6 +35,22 @@ section {
 
     @media screen and (min-width:1024px) and (min-height:1366px) {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    span {
+        text-align     : center;
+        display        : grid;
+        align-content  : center;
+        justify-content: center;
+        height         : 60%;
+        font-size      : 5em;
+        color          : white;
+
+        &::after {
+            display  : block;
+            content  : 'Add few songs';
+            font-size: 0.5em;
+        }
     }
 
     .container {

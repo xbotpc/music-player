@@ -9,8 +9,6 @@ import Playlist from '../Playlist/Playlist';
 import styles from './App.module.scss';
 
 function App() {
-  const { playlist: { playlist } } = store.getState();
-
   return (
     <Provider store={store}>
       <div className={styles.container}>
@@ -22,7 +20,7 @@ function App() {
             Music Player
             <AddSong />
           </header>
-          {playlist.length !== 0 ? <Playlist /> : <span>No Songs Found!</span>}
+          <Playlist />
           <AudioControls />
         </div>
         <AudioPlayer />
