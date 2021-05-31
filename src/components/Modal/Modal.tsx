@@ -9,11 +9,11 @@ interface ModalProps {
     styleClass?: string,
 }
 
-const Modal = ({ id, children, type = 'hidden', styleClass }: ModalProps) => {
+const Modal = ({ id, children, type = 'hidden', styleClass = '' }: ModalProps) => {
 
     const node = (
         <>
-            <div className={styleClass}>
+            <div className={styleClass} data-testid={`${id}-testid`}>
                 {children}
             </div>
         </>
