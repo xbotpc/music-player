@@ -27,7 +27,7 @@
       border-radius: 25px;
     }
 
-    @media screen and (min-width:1024px) and (min-height:1366px){
+    @media screen and (min-width:1024px) and (min-height:1366px) {
       height       : 100%;
       width        : 100%;
       border-radius: 0;
@@ -66,14 +66,41 @@
         padding  : 20px 0;
       }
 
-      svg {
-        width : 40px;
-        height: 40px;
-        fill  : white;
-      }
+      .settingsIcon {
+        &:hover {
+          &::after {
+            content         : 'Coming Soon';
+            position        : absolute;
+            display         : flex;
+            color           : white;
+            font-size       : 14px;
+            background-color: #6b6767f0;
+            padding         : 0.4em;
+            border-radius   : 8px;
+          }
+        }
 
-      button {
-        @include inviButton;
+        svg {
+          width : 40px;
+          height: 40px;
+          fill  : white;
+        }
+      }
+    }
+
+    span {
+      text-align     : center;
+      display        : grid;
+      align-content  : center;
+      justify-content: center;
+      height         : 60%;
+      font-size      : 5em;
+      color          : white;
+
+      &::after {
+        display  : block;
+        content  : 'Add few songs';
+        font-size: 0.5em;
       }
     }
   }

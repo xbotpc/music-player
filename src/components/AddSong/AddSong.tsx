@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ReactComponent as PlusIcon } from '../../images/plus.svg';
 import { ACTIONS } from '../../state/actions';
 import { RootState } from '../../state/store';
+import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
+import styles from './AddSong.module.scss';
 
 const AddSong = () => {
     const dispatch = useDispatch();
@@ -33,9 +35,9 @@ const AddSong = () => {
 
     return (
         <>
-            <button type="button" onClick={onClick}>
+            <Button onClick={onClick} styleClass={styles.addIcon}>
                 <PlusIcon />
-            </button>
+            </Button>
             <Modal id="hiddenModal-1">
                 <input ref={fileSelectorRef}
                     type="file"
