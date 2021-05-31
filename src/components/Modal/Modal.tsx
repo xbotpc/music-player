@@ -9,11 +9,11 @@ interface ModalProps {
     styleClass?: string,
 }
 
-const Modal = ({ id, children, type = 'hidden', styleClass }: ModalProps) => {
+const Modal = ({ id, children, type = 'hidden', styleClass = '' }: ModalProps) => {
 
     const node = (
         <>
-            <div className={styleClass}>
+            <div className={styleClass} data-testid={`${id}-testid`}>
                 {children}
             </div>
         </>
@@ -23,9 +23,8 @@ const Modal = ({ id, children, type = 'hidden', styleClass }: ModalProps) => {
         const modalElement = document.createElement('div');
         modalElement.setAttribute('id', id);
         document.querySelector('body')?.appendChild(modalElement);
-    } else {
-        document.querySelector(`body>div#${id}`)?.setAttribute('class', type);
     }
+    document.querySelector(`body>div#${id}`)?.setAttribute('class', type);
 
 
     return createPortal(node, document.getElementById(id)!)

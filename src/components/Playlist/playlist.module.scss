@@ -1,16 +1,35 @@
 @import '../../styles/common.scss';
 
 section {
-    display              : grid;
-    width                : 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows   : 110px;
-    justify-content      : flex-start;
-    align-content        : flex-start;
-    gap                  : 1.5em 1.5em;
-    padding-bottom       : 2em;
-    overflow-y           : scroll;
-    scrollbar-width      : none;
+    display           : grid;
+    width             : 100%;
+    grid-template-rows: 110px;
+    justify-content   : flex-start;
+    align-content     : flex-start;
+    gap               : 1.5em 1.5em;
+    padding-bottom    : 2em;
+    overflow-y        : scroll;
+    scrollbar-width   : none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media screen and (min-width: 320px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (min-width: 412px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 640px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width:1024px) and (min-height:1366px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
     .container {
         display         : flex;

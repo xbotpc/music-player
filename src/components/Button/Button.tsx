@@ -8,9 +8,9 @@ type ButtonProps = {
     onClick: (e: MouseEvent<HTMLButtonElement>) => void
 }
 
-const Button = ({ children, styleClass = '', type, onClick }: ButtonProps) => {
+const Button = ({ children, styleClass = '', type = 'invisible', onClick }: ButtonProps) => {
     return (
-        <button type="button" className={`${type} ${styleClass}`} onClick={onClick}>
+        <button type="button" className={`${type} ${styleClass}`} onClick={onClick} data-testid="button">
             {children}
         </button>
     )
